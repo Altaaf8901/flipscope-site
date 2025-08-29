@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlipScope™ — Coming Soon</title>
+  <meta name="description" content="FlipScope™ is an AI resale tool. See the real value before you flip." />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- Styles -->
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      /* New background */
+      background: radial-gradient(circle at center, #1a472a, #0d2615);
+    
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+   }
+
+  img.logo {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 16px;
+  }
+
+  h1 { margin: 0 0 8px; font-size: 40px; }
+  p { margin: 4px 0; }
+
+  a.pill {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 16px;
+    border: 1px solid #ffffff33;
+    border-radius: 999px;
+    font-size: 14px;
+    color: #3ddc84;
+    text-decoration: none;
+  }
+
+  a.pill:hover {
+    background: #3ddc84;
+    color: #000;
+  }
+  a {
+    color: #3ddc84;   /* match FlipScope green */
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    margin-top: 40px;
+    font-size: 12px;
+    opacity: 0.75;
+  }
+
+  small {
+    display: block;
+    margin-top: 6px;
+    font-size: 11px;
+    opacity: 0.6;
+  }
+</style>
+
+</head>
+
+<body>
+  <!-- Hero -->
+  <img class="logo" src="flipscope-logo.png" alt="FlipScope logo" />
+  <h1>FlipScope™</h1>
+  <p>AI resale tool. See the real value before you flip.</p>
+  <a class="pill" href="mailto:flipscope.app@gmail.com">Request Early Access</a>
+
+  <!-- Footer -->
+  <footer>
+    <p><span id="year"></span> FlipScope™ · All rights reserved.</p>
+    <p>Contact: <a href="mailto:flipscope.app@gmail.com">flipscope.app@gmail.com</a></p>
+    <small>For demonstration purposes only. Not financial advice.</small>
+    <small>Data sources and brand names belong to their respective owners. FlipScope™ is independent.</small>
+  </footer>
+
+  <!-- Year script -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
