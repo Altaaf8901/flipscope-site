@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FlipScope™ — Coming Soon</title>
   <meta name="description" content="FlipScope™ is an AI resale tool. See the real value before you flip." />
+  <meta name="theme-color" content="#2a5f3d">
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -48,6 +49,7 @@
     font-size: 14px;
     color: #3ddc84;
     text-decoration: none;
+    transition: all 0.3s ease;
   }
 
   a.pill:hover {
@@ -73,6 +75,53 @@
     margin-top: 6px;
     font-size: 11px;
     opacity: 0.6;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  img.logo,
+  h1,
+  p,
+  a.pill {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+  }
+  img.logo { animation-delay: 0.2s; }
+  h1       { animation-delay: 0.4s; }
+  p        { animation-delay: 0.6s; }
+  a.pill   { animation-delay: 0.8s; }
+  /* ===== Responsive tweaks ===== */
+
+  /* Small phones (≤ 420px wide) */
+  @media (max-width: 420px) {
+    img.logo { width: 88px; height: 88px; margin-bottom: 12px; }
+    h1 { font-size: 32px; margin: 4px 0 6px; }
+    p { font-size: 15px; }
+    a.pill { padding: 8px 14px; font-size: 13px; }
+    footer { font-size: 11px; }
+  }
+
+  /* Medium phones (421–768px) */
+  @media (min-width: 421px) and (max-width: 768px) {
+    img.logo { width: 100px; height: 100px; }
+    h1 { font-size: 36px; }
+    p { font-size: 16px; }
+    a.pill { padding: 9px 15px; font-size: 14px; }
+  }
+
+  /* Big screens (≥ 1200px) */
+  @media (min-width: 1200px) {
+    img.logo { width: 128px; height: 128px; }
+    h1 { font-size: 48px; }
+    p { font-size: 18px; }
+    a.pill { padding: 12px 18px; font-size: 15px; }
   }
 </style>
 
